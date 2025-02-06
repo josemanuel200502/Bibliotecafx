@@ -2,12 +2,22 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecajfx.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F9E0C7;" stylesheets="@../../../Styles/Style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecajfx.HelloController">
    <children>
-      <Button layoutX="37.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Hola" />
-      <Button layoutX="170.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Hola" />
-      <Button layoutX="300.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Hola" />
-      <Button layoutX="412.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Hola" />
+      <Button layoutX="74.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button" text="Libros" />
+      <Button layoutX="201.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button2" text="Autores" />
+      <Button layoutX="326.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button3" text="Socios" />
+      <Button layoutX="465.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button4" text="Préstamos" />
+      <Label layoutX="191.0" layoutY="30.0" prefHeight="55.0" prefWidth="248.0" text="¿Que quieres ver en el día de hoy?">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font></Label>
+      <Label layoutX="254.0" layoutY="297.0" prefHeight="55.0" prefWidth="123.0" text="¡Bienvenido!" textAlignment="RIGHT">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
