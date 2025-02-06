@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecajfx.HelloController">
+   <children>
+      <Button layoutX="37.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Hola" />
+      <Button layoutX="170.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Hola" />
+      <Button layoutX="300.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Hola" />
+      <Button layoutX="412.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Hola" />
+   </children>
+</AnchorPane>
