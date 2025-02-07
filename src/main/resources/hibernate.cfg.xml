@@ -9,7 +9,7 @@
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 
         <!-- URL de conexión -->
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Libreria</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/libreria</property>
 
         <!-- Credenciales -->
         <property name="hibernate.connection.username">root</property>
@@ -21,10 +21,10 @@
         <property name="hibernate.current_session_context_class">thread</property>
 
         <!-- Mapear clases -->
-        <mapping class="org.example.entities.Autores"/>
-        <mapping class="org.example.entities.Libros"/>
-        <mapping class="org.example.entities.Prestamos"/>
-        <mapping class="org.example.entities.Socios"/>
+        <mapping class="org.example.bibliotecajfx.Entities.Autores"/>
+        <mapping class="org.example.bibliotecajfx.Entities.Libros"/>
+        <mapping class="org.example.bibliotecajfx.Entities.Prestamos"/>
+        <mapping class="org.example.bibliotecajfx.Entities.Socios"/>
 
     </session-factory>
 </hibernate-configuration>

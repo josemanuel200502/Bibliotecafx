@@ -1,7 +1,6 @@
 package org.example.bibliotecajfx.Entities;
 
 import jakarta.persistence.*;
-
 import java.io.Serializable;
 import java.util.List;
 
