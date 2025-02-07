@@ -1,13 +1,44 @@
 package org.example.bibliotecajfx.Entities;
 
-public class Autores {
-    public String nombre_autor;
-    public String nacionalidad;
+import jakarta.persistence.*;
 
+import java.io.Serializable;
 
-    //Añadir autores con nombre y nacionalidad
-    //Modificar la información de autores existentes
-    //Eliminar autores
-    //Buscar autores por nombre
-    //Listar todos los autores
+@Entity
+@Table(name = "Autores")
+public class Autores implements Serializable {
+
+    @Id
+    private String nombreAutor;  // Clave primaria
+
+    private String nacionalidad;
+
+    public Autores() {}
+
+    public Autores(String nombreAutor, String nacionalidad) {
+        this.nombreAutor = nombreAutor;
+        this.nacionalidad = nacionalidad;
+    }
+
+    // Getters y setters
+    public String getNombreAutor() {
+        return nombreAutor;
+    }
+
+    public void setNombreAutor(String nombreAutor) {
+        this.nombreAutor = nombreAutor;
+    }
+
+    public String getNacionalidad() {
+        return nacionalidad;
+    }
+
+    public void setNacionalidad(String nacionalidad) {
+        this.nacionalidad = nacionalidad;
+    }
+
+    @Override
+    public String toString() {
+        return "Autor: " + nombreAutor + ", Nacionalidad: " + nacionalidad;
+    }
 }
