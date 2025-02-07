@@ -23,6 +23,8 @@ public class Main {
         // Crear una sesión
         Session session = factory.getCurrentSession();
 
+
+        //A la hora de ejecutar el programa hay que cambiar el nomrbe del autor y el isbn
         try {
             // Crear nuevo socio (asegurate de que Socios tiene un constructor adecuado)
             Socios nuevoSocio = new Socios();
@@ -31,11 +33,11 @@ public class Main {
             nuevoSocio.setNumTelefono(String.valueOf(123456789));
 
             // Crear nuevo autor
-            Autores autor = new Autores("Miguel de Cervantes", "Española");
+            Autores autor = new Autores("Pepep mel", "Española");
 
             // Crear nuevo libro y asignar el autor
             Libros nuevoLibro = new Libros();
-            nuevoLibro.setISBN("1234567891023");
+            nuevoLibro.setISBN("1234567891056");
             nuevoLibro.setTitulo("El Quijote");
             nuevoLibro.setAutor(autor);  // Asignar el objeto Autor
             nuevoLibro.setEditorial("Editorial A");
