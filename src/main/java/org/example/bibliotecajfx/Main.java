@@ -33,11 +33,11 @@ public class Main {
             nuevoSocio.setNumTelefono(String.valueOf(123456789));
 
             // Crear nuevo autor
-            Autores autor = new Autores("Pepep mel", "Española");
+            Autores autor = new Autores("Pepep melO", "Espanish");
 
             // Crear nuevo libro y asignar el autor
             Libros nuevoLibro = new Libros();
-            nuevoLibro.setISBN("1234567891056");
+            nuevoLibro.setISBN("1234567891059");
             nuevoLibro.setTitulo("El Quijote");
             nuevoLibro.setAutor(autor);  // Asignar el objeto Autor
             nuevoLibro.setEditorial("Editorial A");
