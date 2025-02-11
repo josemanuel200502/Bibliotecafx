@@ -3,9 +3,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecajfx.Controller.SociosController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F9E0C7;" styleClass="Fondo" stylesheets="@../../../Styles/Style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecajfx.Controller.SociosController">
     <children>
-        <Label layoutX="200.0" layoutY="50.0" text="Gestión de Socios" />
-        <Button layoutX="250.0" layoutY="200.0" text="Volver" onAction="#volverAlMenu"/>
+        <Button layoutX="14.0" layoutY="60.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" styleClass="menu-button1" text="Añadir" />
+        <Button layoutX="14.0" layoutY="111.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" styleClass="menu-button2" text="Modificar" />
+        <Button layoutX="14.0" layoutY="164.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" styleClass="menu-button3" text="Eliminar" />
+        <Button layoutX="14.0" layoutY="222.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" styleClass="menu-button4" text="Buscar" />
+      <TextField layoutX="226.0" layoutY="48.0" />
+      <Button layoutX="243.0" layoutY="336.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" text="Volver" />
+      <Label layoutX="254.0" layoutY="14.0" text="Gestion de socios" />
+      <Button layoutX="14.0" layoutY="271.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" styleClass="menu-button4" text="Listar" />
     </children>
 </AnchorPane>

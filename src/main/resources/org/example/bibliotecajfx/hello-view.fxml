@@ -4,9 +4,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F9E0C7;" stylesheets="@../../../Styles/Style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecajfx.HelloController">
+<AnchorPane styleClass="Fondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F9E0C7;" stylesheets="@../../../Styles/Style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecajfx.HelloController">
    <children>
-      <Button layoutX="74.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button" text="Libros" onAction="#abrirLibros" />
+      <Button layoutX="74.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button1" text="Libros" onAction="#abrirLibros" />
       <Button layoutX="201.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button2" text="Autores" onAction="#abrirAutores"/>
       <Button layoutX="326.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button3" text="Socios"  onAction="#abrirSocios"/>
       <Button layoutX="465.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button4" text="Préstamos" onAction="#abrirPrestamos" />

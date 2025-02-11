@@ -3,9 +3,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecajfx.Controller.LibrosController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F9E0C7;" styleClass="Fondo" stylesheets="@../../../Styles/Style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecajfx.Controller.LibrosController">
     <children>
-        <Label layoutX="200.0" layoutY="50.0" text="Gestión de Libros" />
-        <Button layoutX="250.0" layoutY="200.0" text="Volver" onAction="#volverAlMenu"/>
+        <Label layoutX="254.0" layoutY="27.0" text="Gestión de Libros" />
+        <Button layoutX="275.0" layoutY="321.0" onAction="#volverAlMenu" text="Volver" />
+        <Button layoutX="14.0" layoutY="60.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" styleClass="menu-button1" text="Añadir" />
+        <Button layoutX="14.0" layoutY="111.0" mnemonicParsing="false" styleClass="menu-button2" text="Modifcar" />
+        <Button layoutX="14.0" layoutY="165.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" styleClass="menu-button3" text="Eliminar" />
+        <Button layoutX="14.0" layoutY="222.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" styleClass="menu-button4" text="Buscar" />
+        <TextField layoutX="226.0" layoutY="61.0" />
+      <Button layoutX="14.0" layoutY="266.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" styleClass="menu-button4" text="Listar" />
     </children>
 </AnchorPane>

@@ -25,12 +25,12 @@ public class HelloController {
 
     @FXML
     private void abrirLibros(ActionEvent event) throws IOException{
-        cambiarVentana(event,"autores-view.fxml");
+        cambiarVentana(event,"Autor-view.fxml");
     }
 
     @FXML
     private void abrirAutores(ActionEvent event)throws IOException{
-        cambiarVentana(event,"autores-view.fxml");
+        cambiarVentana(event,"Autor-view.fxml");
     }
 
     @FXML

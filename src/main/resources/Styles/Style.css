@@ -1,4 +1,4 @@
-.menu-button{
+.menu-button1{
 -fx-background-color: #FFB6C1;
 -fx-background-radius:5;
 -fx-font-size:13px;
@@ -23,3 +23,5 @@
 -fx-font-size:13px;
 }
 
+.fondo{
+-fx-background-color: #F9E0C7;}
