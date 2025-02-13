@@ -8,6 +8,7 @@ import java.io.Serializable;
 @Table(name = "Autores")
 public class Autores implements Serializable {
 
+
     @Id
     private String nombreAutor;  // Clave primaria
 

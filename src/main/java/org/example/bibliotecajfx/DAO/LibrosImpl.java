@@ -11,13 +11,31 @@ public class LibrosImpl implements LibrosInt {
 
     private Session session;
 
+
+
     /**
-     * Constructor de la clase LibrosImpl
+     * Busca un libro por su ISBN.
      *
-     * @param session La sesión de Hibernate que se utilizará para realizar las operaciones.
+     * @param isbn El ISBN del libro a buscar.
+     * @return El libro que coincida con el ISBN o null si no se encuentra.
+     * @throws HibernateException en caso de error de conexión con la base de datos.
      */
-    public LibrosImpl(Session session) {
-        this.session = session;
+    @Override
+    public  Libros findLibroByISBN(String isbn) throws HibernateException {
+        try {
+            // Creamos la consulta HQL para buscar el libro por ISBN
+            List<Libros> libros = session.createQuery("FROM Libros WHERE isbn = :isbn", Libros.class)
+                    .setParameter("isbn", isbn)
+                    .getResultList();
+
+            // Si encontramos un libro, devolvemos el primero, si no, devolvemos null
+            if (!libros.isEmpty()) {
+                return libros.get(0);  // Devuelve el primer libro encontrado
+            }
+            return null;  // Retorna null si no se encuentra ningún libro con ese ISBN
+        } catch (HibernateException e) {
+            throw new HibernateException("Error al buscar libro por ISBN.", e);
+        }
     }
 
     /**

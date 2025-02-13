@@ -11,13 +11,26 @@ public class SociosImpl implements SociosInt {
 
     private Session session;
 
+
+
+
     /**
-     * Constructor que recibe la sesión de Hibernate.
+     * Busca un socio por su ID.
      *
-     * @param session La sesión activa de Hibernate.
+     * @param id El ID del socio a buscar.
+     * @return El socio que coincide con el ID o null si no se encuentra.
+     * @throws HibernateException en caso de error de conexión con la base de datos.
      */
-    public SociosImpl(Session session) {
-        this.session = session;
+    public Socios findSocioById(Integer id) throws HibernateException {
+        try {
+            // Creamos la consulta HQL para buscar el socio por ID
+            Socios socio = session.get(Socios.class, id);  // Utilizamos session.get para buscar por ID
+
+            // Si el socio es encontrado, lo devolvemos
+            return socio;
+        } catch (HibernateException e) {
+            throw new HibernateException("Error al buscar socio por ID.", e);
+        }
     }
 
     /**

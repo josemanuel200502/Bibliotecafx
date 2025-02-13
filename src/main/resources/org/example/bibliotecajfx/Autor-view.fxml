@@ -6,12 +6,18 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F9E0C7;" styleClass="Fondo" stylesheets="@../../../Styles/Style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bibliotecajfx.Controller.AutorController">
     <children>
         <Label layoutX="249.0" layoutY="32.0" text="Gestión de Autores" />
-        <Button layoutX="258.0" layoutY="335.0" onAction="#volverAlMenu" prefHeight="30.0" prefWidth="86.0" text="Volver" />
-      <Button layoutX="14.0" layoutY="60.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="73.0" styleClass="menu-button1" text="Añadir" />
-      <Button layoutX="14.0" layoutY="111.0" mnemonicParsing="false" styleClass="menu-button2" text="Modificar" />
-      <Button layoutX="14.0" layoutY="153.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="73.0" styleClass="menu-button3" text="Eliminar" />
-      <Button layoutX="14.0" layoutY="245.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="73.0" styleClass="menu-button4" text="Listar" />
-      <TextField layoutX="226.0" layoutY="61.0" />
-      <Button layoutX="14.0" layoutY="200.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="73.0" styleClass="menu-button3" text="Buscar" />
+        <Button layoutX="14.0" layoutY="49.0" onAction="#añadirAutor" prefHeight="27.0" prefWidth="77.0" styleClass="menu-button1" text="Añadir" />
+        <Button layoutX="14.0" layoutY="105.0" onAction="#modificarAutor" prefHeight="27.0" prefWidth="77.0" styleClass="menu-button1" text="Modificar" />
+        <Button layoutX="14.0" layoutY="158.0" onAction="#eliminarAutor" prefHeight="27.0" prefWidth="77.0" styleClass="menu-button1" text="Eliminar" />
+        <Button layoutX="14.0" layoutY="207.0" onAction="#buscarAutor" prefHeight="27.0" prefWidth="77.0" styleClass="menu-button1" text="Buscar" />
+        <Button layoutX="14.0" layoutY="254.0" onAction="#listarAutores" prefHeight="27.0" prefWidth="77.0" styleClass="menu-button1" text="Listar" />
+        <Button layoutX="250.0" layoutY="350.0" onAction="#volverAlMenu" styleClass="menu-button1" text="Volver" />
+      <TableView layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="224.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+
     </children>
 </AnchorPane>

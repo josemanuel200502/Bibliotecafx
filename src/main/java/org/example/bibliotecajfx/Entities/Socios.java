@@ -10,7 +10,7 @@ public class Socios implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;  // Identificador único del socio
+    private Integer id;  // Identificador único del socio
 
     private String nombre;
     private String direccion;
@@ -21,18 +21,26 @@ public class Socios implements Serializable {
 
     public Socios() {}
 
-    public Socios(String nombre, String direccion, String numTelefono) {
+    public Socios(Integer id,String nombre, String direccion, String numTelefono) {
+
         this.nombre = nombre;
         this.direccion = direccion;
         this.numTelefono = numTelefono;
     }
 
-    // Getters y Setters
-    public Long getId() {
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

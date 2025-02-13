@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface LibrosInt {
 
+    Libros findLibroByISBN(String isbn) throws HibernateException;
+
     /**
      * Obtiene todos los libros que no han sido prestados.
      *

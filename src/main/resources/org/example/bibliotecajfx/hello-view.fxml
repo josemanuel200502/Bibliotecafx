@@ -9,7 +9,7 @@
       <Button layoutX="74.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button1" text="Libros" onAction="#abrirLibros" />
       <Button layoutX="201.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button2" text="Autores" onAction="#abrirAutores"/>
       <Button layoutX="326.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button3" text="Socios"  onAction="#abrirSocios"/>
-      <Button layoutX="465.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button4" text="Préstamos" onAction="#abrirPrestamos" />
+      <Button layoutX="465.0" layoutY="199.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" styleClass="menu-button4" text="Préstamos" onAction="#abrirPrestamos"/>
       <Label layoutX="191.0" layoutY="30.0" prefHeight="55.0" prefWidth="248.0" text="¿Que quieres ver en el día de hoy?">
          <font>
             <Font name="Book Antiqua" size="14.0" />

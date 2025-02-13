@@ -63,13 +63,28 @@ public class LibrosController {
     // Método para volver al menú principal
     @FXML
     private void volverAlMenu(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/bibliotecajfx/hello-view.fxml"));
         root = loader.load();
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
+
+
+    // Listar todos los libros
+    public void listarLibros(ActionEvent event) {
+        ObservableList<Libro> listaLibros = FXCollections.observableArrayList();
+
+        // Aquí deberías obtener los libros de la base de datos o de donde los tengas almacenados
+        listaLibros.add(new Libro("El Quijote", "Miguel de Cervantes", 1605));
+        listaLibros.add(new Libro("Cien años de soledad", "Gabriel García Márquez", 1967));
+        listaLibros.add(new Libro("1984", "George Orwell", 1949));
+
+        tablaLibros.setItems(listaLibros);
+    }
+
+
 
     // Método para añadir un libro
     @FXML
@@ -97,19 +112,17 @@ public class LibrosController {
         String isbn = isbnField.getText();
         boolean encontrado = false;
 
+        // Modificar los atributos del libro encontrado
         for (Libro libro : listaLibros) {
             if (libro.getIsbn().equals(isbn)) {
-                // Modificamos los detalles del libro
-                libro = new Libro(
-                        tituloField.getText(),
-                        isbn,
-                        autorField.getText(),
-                        editorialField.getText(),
-                        anioField.getText()
-                );
-                tablaLibros.refresh();  // Refrescamos la tabla para mostrar el libro actualizado
+                libro.titulo = tituloField.getText();
+                libro.autor = autorField.getText();
+                libro.editorial = editorialField.getText();
+                libro.anio = anioField.getText();
+                tablaLibros.refresh();  // Refrescamos la tabla
                 encontrado = true;
                 break;
+
             }
         }
 
@@ -153,6 +166,7 @@ public class LibrosController {
         }
         tablaLibros.setItems(filteredList);
     }
+
 
     // Limpiar los campos de texto después de cada acción
     private void clearFields() {

@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface SociosInt {
 
+    Socios findSocioById(Integer id) throws HibernateException;
+
     /**
      * Añade un nuevo socio a la base de datos.
      *

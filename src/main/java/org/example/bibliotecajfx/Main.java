@@ -33,7 +33,7 @@ public class Main {
             nuevoSocio.setNumTelefono(String.valueOf(123456789));
 
             // Crear nuevo autor
-            Autores autor = new Autores("Pepep mel22", "Espanish");
+            Autores autor = new Autores("Pepep mel24", "Espanish");
 
             // Crear nuevo libro y asignar el autor
             Libros nuevoLibro = new Libros();

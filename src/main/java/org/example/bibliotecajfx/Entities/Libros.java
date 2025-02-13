@@ -8,7 +8,19 @@ import java.io.Serializable;
 @Table(name = "Libros")
 public class Libros implements Serializable {
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    private Integer id;
+
     private String ISBN;  // Se usa el ISBN como clave primaria
 
     private String titulo;
@@ -25,7 +37,8 @@ public class Libros implements Serializable {
 
     public Libros() {}
 
-    public Libros(String ISBN, String titulo, Autores autor, String editorial, int anyoPubli) {
+    public Libros(Integer id,String ISBN, String titulo, Autores autor, String editorial, int anyoPubli) {
+
         this.ISBN = ISBN;
         this.titulo = titulo;
         this.autor = autor;  // Ahora pasamos un objeto de tipo Autor
